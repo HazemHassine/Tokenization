@@ -85,9 +85,10 @@ void input()
     for (int i = 0; i < n; i++)
     {
         std::cout << "category " << categories[i] << std::endl;
-        for (int j = 0; j < numberOfValues[i]; j++)
-        {
-            std::cout << values[i][j];
+        for (int j = 0; j < values.at(i).size(); j++)
+        {   
+            std::cout << j;
+            std::cout << values.at(i).at(j);
         }
         std::cout << std::endl;
     }
